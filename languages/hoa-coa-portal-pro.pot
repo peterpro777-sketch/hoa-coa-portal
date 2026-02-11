@@ -1,0 +1,11 @@
+# Copyright (C) 2026 Sun Life Tech
+# This file is distributed under the same license as the HOA/COA Portal plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: HOA/COA Portal 2026\n"
+"Report-Msgid-Bugs-To: https://plugins.sunlifetech.com/\n"
+"POT-Creation-Date: 2026-02-03 18:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+

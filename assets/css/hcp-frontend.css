@@ -1,0 +1,80 @@
+
+/* Badges */
+.hcp-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid rgba(0,0,0,.12);background:#fff;line-height:1.2;}
+.hcp-badge-dot{width:8px;height:8px;border-radius:999px;background:#999;}
+.hcp-badge--open .hcp-badge-dot{background:#2a8f2a;}
+.hcp-badge--closed .hcp-badge-dot{background:#b23b3b;}
+.hcp-badge--draft .hcp-badge-dot{background:#b28700;}
+
+/* Tooltips */
+.hcp-tooltip{position:relative;display:inline-flex;align-items:center;}
+.hcp-tip{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:999px;border:1px solid rgba(0,0,0,.15);color:#222;font-size:12px;line-height:1;cursor:help;background:rgba(255,255,255,.85);}
+.hcp-tip-panel{position:absolute;left:0;top:calc(100% + 8px);min-width:240px;max-width:360px;background:#111;color:#fff;padding:10px 12px;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.25);z-index:999;opacity:0;transform:translateY(-4px);pointer-events:none;transition:opacity .12s ease, transform .12s ease;}
+.hcp-tooltip.is-open .hcp-tip-panel{opacity:1;transform:translateY(0);pointer-events:auto;}
+.hcp-tip-panel:before{content:"";position:absolute;top:-6px;left:10px;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #111;}
+
+/* Portal list meta + filters */
+.hcp-item-meta{font-size:12px;opacity:.8;margin-top:6px;margin-bottom:10px;}
+.hcp-item-head{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.hcp-filter-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 14px 0;}
+.hcp-filter-label{font-size:12px;opacity:.8;margin-right:2px;}
+.hcp-filter-pill{display:inline-flex;align-items:center;justify-content:center;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.14);background:rgba(255,255,255,.75);font-size:12px;font-weight:600;text-decoration:none;}
+.hcp-filter-pill:hover{background:#fff;}
+.hcp-filter-pill.is-active{border-color:rgba(0,0,0,.28);background:#fff;}
+
+/* Search row */
+.hcp-search-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px 0;}
+.hcp-search-input{min-width:220px;flex:1;max-width:420px;padding:10px 12px;border-radius:12px;border:1px solid rgba(0,0,0,.14);background:rgba(255,255,255,.85);}
+.hcp-search-btn{padding:10px 12px;border-radius:12px;border:1px solid rgba(0,0,0,.18);background:#fff;font-weight:700;cursor:pointer;}
+.hcp-search-clear{font-size:12px;opacity:.85;text-decoration:none;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.12);background:rgba(255,255,255,.65);}
+
+/* Assigned badge */
+.hcp-badge.hcp-badge--assigned{
+    display:inline-block;
+    font-size:12px;
+    line-height:1;
+    padding:6px 10px;
+    border-radius:999px;
+    border:1px solid rgba(0,0,0,0.08);
+    background:rgba(255,255,255,0.85);
+    margin:0 0 8px 0;
+}
+
+/* Sub-filters (portal lists) */
+.hcp-subfilters{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin:0 0 14px 0;
+}
+.hcp-subfilters__link{
+    display:inline-block;
+    padding:8px 12px;
+    border-radius:999px;
+    border:1px solid rgba(0,0,0,0.10);
+    background:rgba(255,255,255,0.75);
+    text-decoration:none;
+    font-size:13px;
+}
+.hcp-subfilters__link.is-active{
+    background:#fff;
+    border-color:rgba(0,0,0,0.18);
+    font-weight:600;
+}
+
+/* Tab badge */
+.hcp-tab__badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:22px;
+    height:22px;
+    padding:0 7px;
+    margin-left:8px;
+    border-radius:999px;
+    border:1px solid rgba(0,0,0,0.10);
+    background:rgba(255,255,255,0.85);
+    font-size:12px;
+    font-weight:600;
+    line-height:1;
+}
